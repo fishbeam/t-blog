@@ -1,0 +1,22 @@
+body {
+    font-family: "Verdana", /*"Droid Sans",*/ sans-serif;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.1em;
+    color: #000;
+}
+
+p {
+    line-height: 1.5em;
+    color: #333;
+}
+
+aside {
+/*    float: right;*/
+    background-color: #777;
+}
+
+div[role="main"] {
+/*    float: left;*/
+}

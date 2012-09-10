@@ -6,14 +6,33 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript">
+        var gOverride = {
+          urlBase: 'http://gridder.andreehansson.se/releases/latest/',
+          gColor: '#EEEEEE',
+          gColumns: 10,
+          gOpacity: 0.35,
+          gWidth: 12,
+          pColor: '#C0C0C0',
+          pHeight: 15,
+          pOffset: 0,
+          pOpacity: 0.55,
+          center: true,
+          gEnabled: true,
+          pEnabled: false,
+          setupEnabled: true,
+          fixFlash: true,
+          size: 960
+};
+</script>
 </head>
-<body>
+<body class="container_10">
 
-    <header>
+    <header class="grid_10">
         <h1>[Blog title]</h1>
     </header>
     
-    <div role="main">
+    <div role="main" class="grid_5 push_1">
         <article>
             <h2>Post Title</h2>
             <time datetime="2012-09-10"><span>Sep</span><span>10</span></time>
@@ -22,9 +41,10 @@
         </article>
     </div>
     
-    <aside>
+    <aside class="grid_3 push_1">
+    sidebar content
     </aside>
-    
+        
     <footer>
     </footer>
 
