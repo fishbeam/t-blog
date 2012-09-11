@@ -1,10 +1,11 @@
 body {
-    font-family: "Verdana", /*"Droid Sans",*/ sans-serif;
+    font-family: "Droid Sans", sans-serif;
 }
 
 h1, h2, h3, h4 {
     line-height: 1.1em;
     color: #000;
+    border:
 }
 
 p {
@@ -12,11 +13,38 @@ p {
     color: #333;
 }
 
+header {
+    height: 126px;
+    margin: 12px 0;
+}
+
 aside {
 /*    float: right;*/
-    background-color: #777;
+    background-color: #b2e1ed;
+    height: 600px;
+    position: relative;
 }
 
 div[role="main"] {
-/*    float: left;*/
+    border: 1px solid transparent;
+}
+
+/* datestamp awesomeness */
+time span {
+    position: absolute;
+    font-family: Verdana;
+    text-align: center;
+}
+
+time span:nth-of-type(1) {
+    font-size: 24px;
+    text-transform: uppercase;
+    top: 60px;
+    left: -72px;
+}
+
+time span:nth-of-type(2) {
+    font-size: 48px;
+    top: 9px;
+    left: -80px;
 }
