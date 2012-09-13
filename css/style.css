@@ -1,29 +1,38 @@
 body {
     font-family: "Droid Sans", sans-serif;
 }
-
 h1, h2, h3, h4 {
     line-height: 1.1em;
     color: #000;
-    border:
 }
-
 p {
     line-height: 1.5em;
     color: #333;
 }
-
 header {
     height: 126px;
     margin: 12px 0;
 }
 
+/* sidebar stuff */
 aside {
-/*    float: right;*/
-    background-color: #d3d7cf;
+/*    background-color: #d3d7cf;*/
     height: 600px;
     position: relative;
+    font-size: 14px;
+    padding: 12px;
 }
+.abt-me {
+    border-bottom: 1px solid #999;
+}
+.abt-me h3 {
+    margin: 0 22px 0 23px;
+    float: right;
+    min-width: 50px;
+}
+.abt-me p {
+    clear: both;
+} /* end sidebar stuff */
 
 div[role="main"] {
     border: 1px solid transparent;
@@ -35,16 +44,16 @@ time span {
     font-family: Verdana;
     text-align: center;
 }
-
 time span:nth-of-type(1) {
     font-size: 24px;
     text-transform: uppercase;
     top: 60px;
     left: -72px;
 }
-
 time span:nth-of-type(2) {
     font-size: 48px;
     top: 9px;
     left: -80px;
-}
+} /* end datestamp awesomeness */
+
+
