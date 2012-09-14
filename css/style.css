@@ -22,9 +22,6 @@ aside {
     font-size: 14px;
     padding: 12px;
 }
-.abt-me {
-    border-bottom: 1px solid #999;
-}
 .abt-me h3 {
     margin: 0 22px 0 23px;
     float: right;
@@ -39,21 +36,25 @@ div[role="main"] {
 }
 
 /* datestamp awesomeness */
-time span {
+.post time {
+    display: block;
+    width: 66px;
     position: absolute;
+    top: 10px;
+    left: -78px;
     font-family: Verdana;
     text-align: center;
 }
-time span:nth-of-type(1) {
+.post time span:nth-of-type(1) {
+    font-size: 48px;
+    display: inline-block;
+} 
+.post time span:nth-of-type(2) {
     font-size: 24px;
     text-transform: uppercase;
-    top: 60px;
-    left: -72px;
+    display: inline-block;
+    margin-top: -6px;
 }
-time span:nth-of-type(2) {
-    font-size: 48px;
-    top: 9px;
-    left: -80px;
-} /* end datestamp awesomeness */
+/* end datestamp awesomeness */
 
 
