@@ -1,5 +1,11 @@
+.post, header, aside {
+    background-color: transparent;
+}
+
+/*  --------------------------  */
 body {
     font-family: "Droid Sans", sans-serif;
+    font-size: 16px;
 }
 h1, h2, h3, h4 {
     line-height: 1.1em;
@@ -9,21 +15,18 @@ p {
     line-height: 1.5em;
     color: #333;
 }
-header {
+header[role="banner"] {
     height: 126px;
-    margin: 12px 0;
 }
 
 /* sidebar stuff */
 aside {
-/*    background-color: #d3d7cf;*/
     height: 600px;
     position: relative;
     font-size: 14px;
-    padding: 12px;
 }
 .abt-me h3 {
-    margin: 0 22px 0 23px;
+    margin: 0 18px 1em auto;
     float: right;
     min-width: 50px;
 }
@@ -31,16 +34,18 @@ aside {
     clear: both;
 } /* end sidebar stuff */
 
-div[role="main"] {
-    border: 1px solid transparent;
+.post {
+    position: relative;
+    margin: 0 auto 30px;
 }
-
-/* datestamp awesomeness */
+.post h2 {
+    margin-top: 0;
+}
 .post time {
     display: block;
     width: 66px;
     position: absolute;
-    top: 10px;
+    top: -10px;
     left: -78px;
     font-family: Verdana;
     text-align: center;
@@ -55,6 +60,14 @@ div[role="main"] {
     display: inline-block;
     margin-top: -6px;
 }
-/* end datestamp awesomeness */
-
-
+.post footer {
+    font-size: 14px;
+    height: 1em;
+    display: none;
+}
+.post footer span:nth-of-type(1) {
+    float: left;
+}
+.post footer span:nth-of-type(2) {
+    float: right;
+}
