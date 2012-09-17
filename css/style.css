@@ -4,12 +4,14 @@
 
 /*  --------------------------  */
 body {
-    font-family: "Droid Sans", sans-serif;
+/*    font-family: "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;*/
+    font-family: Verdana, "Liberation Sans", sans-serif;
     font-size: 16px;
 }
 h1, h2, h3, h4 {
     line-height: 1.1em;
     color: #000;
+    
 }
 p {
     line-height: 1.5em;
