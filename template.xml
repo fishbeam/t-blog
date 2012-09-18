@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>tblog</title>
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/grid8.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+<!--    <script src="js/gridder.js"></script>-->
+    <b:skin>
+        <style>
+            /*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+            article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+            /*
+	            Variable Grid System.
+	            Learn more ~ http://www.spry-soft.com/grids/
+	            Based on 960 Grid System - http://960.gs/
+
+	            Licensed under GPL and MIT.
+            */
+            body{min-width:960px}.container_8{margin-left:auto;margin-right:auto;width:960px}.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8{display:inline;float:left;position:relative;margin-left:12px;margin-right:12px}.push_1,.pull_1,.push_2,.pull_2,.push_3,.pull_3,.push_4,.pull_4,.push_5,.pull_5,.push_6,.pull_6,.push_7,.pull_7,.push_8,.pull_8{position:relative}.alpha{margin-left:0}.omega{margin-right:0}.container_8 .grid_1{width:96px}.container_8 .grid_2{width:216px}.container_8 .grid_3{width:336px}.container_8 .grid_4{width:456px}.container_8 .grid_5{width:576px}.container_8 .grid_6{width:696px}.container_8 .grid_7{width:816px}.container_8 .grid_8{width:936px}.container_8 .prefix_1{padding-left:120px}.container_8 .prefix_2{padding-left:240px}.container_8 .prefix_3{padding-left:360px}.container_8 .prefix_4{padding-left:480px}.container_8 .prefix_5{padding-left:600px}.container_8 .prefix_6{padding-left:720px}.container_8 .prefix_7{padding-left:840px}.container_8 .suffix_1{padding-right:120px}.container_8 .suffix_2{padding-right:240px}.container_8 .suffix_3{padding-right:360px}.container_8 .suffix_4{padding-right:480px}.container_8 .suffix_5{padding-right:600px}.container_8 .suffix_6{padding-right:720px}.container_8 .suffix_7{padding-right:840px}.container_8 .push_1{left:120px}.container_8 .push_2{left:240px}.container_8 .push_3{left:360px}.container_8 .push_4{left:480px}.container_8 .push_5{left:600px}.container_8 .push_6{left:720px}.container_8 .push_7{left:840px}.container_8 .pull_1{left:-120px}.container_8 .pull_2{left:-240px}.container_8 .pull_3{left:-360px}.container_8 .pull_4{left:-480px}.container_8 .pull_5{left:-600px}.container_8 .pull_6{left:-720px}.container_8 .pull_7{left:-840px}.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:before,.clearfix:after{content:'\0020';display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:after{clear:both}.clearfix{zoom:1}
+            
+            /* 
+                Main styles 
+                Author: Bryce Miller
+            */
+            
+            body {
+            /*    font-family: "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;*/
+                font-family: Verdana, "Liberation Sans", sans-serif;
+                font-size: 16px;
+            }
+            h1, h2, h3, h4 {
+                line-height: 1.1em;
+                color: #000;
+                Font-family: Arial;
+            }
+            p {
+                line-height: 1.5em;
+                color: #333;
+            }
+            header[role="banner"] {
+                height: 126px;
+            }
+
+            /* sidebar stuff */
+            aside {
+                height: 600px;
+                position: relative;
+                font-size: 14px;
+            }
+            .abt-me h3 {
+                margin: 0 18px 1em auto;
+                float: right;
+                min-width: 50px;
+            }
+            .abt-me img {
+                width: 96px;
+                height: 96px;
+            }
+            .abt-me p {
+                clear: both;
+            } /* end sidebar stuff */
+
+            .post {
+                position: relative;
+                margin: 0 auto 30px;
+            }
+            .post h2 {
+                margin-top: 0;
+            }
+            .post time {
+                display: block;
+                width: 66px;
+                position: absolute;
+                top: -10px;
+                left: -78px;
+                text-align: center;
+            }
+            .post time span:nth-of-type(1) {
+                font-size: 48px;
+                display: inline-block;
+            } 
+            .post time span:nth-of-type(2) {
+                font-size: 24px;
+                text-transform: uppercase;
+                display: inline-block;
+                margin-top: -6px;
+            }
+            .post footer {
+                font-size: 14px;
+                color: #666666;
+                margin-top: -6px;
+            }
+            .post footer span:nth-of-type(1) {
+                float: left;
+            }
+            .post footer span:nth-of-type(2) {
+                float: right;
+            }            
+            
+        </style>
+    </b:skin> 
+</head>
+<body class="container_8" onload="createGridder()">
+
+    <header role="banner" class="grid_8">
+        <h1>[Blog title]</h1>
+    </header>
+    
+    <div role="main" class="grid_4 push_2">
+        <article class="post">
+            <header>
+                <h2>Post Title</h2>
+                <time datetime="2012-09-10" pubdate><span>10</span><span>Sep</span></time>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. </p>
+            <p>Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. <b>Proin ut ligula vel nunc egestas porttitor</b>. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. </p>
+            <footer class="clearfix">
+                <span>Posted by Author</span>
+                <span>Comments</span>
+            </footer>
+        </article>
+        
+        <article class="post">
+            <h2>Post Title</h2>
+            <time datetime="2012-09-05" pubdate><span>05</span><span>Sep</span></time>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. </p>
+            <p>Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. <b>Proin ut ligula vel nunc egestas porttitor</b>. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. </p>
+            <footer class="clearfix">
+                <span>Posted by Author</span>
+                <span>Comments</span>
+            </footer>
+        </article>
+    </div>
+    
+    <aside class="grid_2 push_2">
+        <section class="abt-me">
+            <h3>About Me</h3>
+            <img src="http://lorempixel.com/96/96" />
+            <p>Nec magna cum urna adipiscing mid a, magna a integer penatibus? Mus, lectus vut ut sociis, phasellus lundium egestas nascetur magna adipiscing sed in, vel nec natoque. Elementum, aliquet porttitor.</p>
+        </section>
+        
+    </aside>
+        
+    <footer>
+    </footer>
+
+</body>
+</html>
